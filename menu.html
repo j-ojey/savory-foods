@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our exquisite menu featuring appetizers, main courses, desserts, and beverages">
+    <title>Menu - Savory Bites</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>🍽️ Savory Bites</h1>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html" class="active">Menu</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Our Menu</h1>
+            <p class="page-subtitle">Crafted with passion, served with excellence</p>
+        </div>
+    </section>
+
+    <!-- Menu Filter Buttons -->
+    <section class="menu-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="appetizers">Appetizers</button>
+                <button class="filter-btn" data-category="mains">Main Courses</button>
+                <button class="filter-btn" data-category="desserts">Desserts</button>
+                <button class="filter-btn" data-category="beverages">Beverages</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Items Section -->
+    <section class="menu-items">
+        <div class="container">
+            
+            <!-- Appetizers -->
+            <div class="menu-category" id="appetizers">
+                <h2 class="category-title">🥗 Appetizers</h2>
+                <div class="items-grid">
+                    <div class="menu-item" data-category="appetizers">
+                        <div class="item-header">
+                            <h3>Bruschetta Trio</h3>
+                            <span class="item-price">$14.00</span>
+                        </div>
+                        <p class="item-description">Three varieties of toasted bread topped with tomato basil, roasted red pepper, and olive tapenade</p>
+                        <span class="item-tag">🌱 Vegetarian</span>
+                    </div>
+
+                    <div class="menu-item" data-category="appetizers">
+                        <div class="item-header">
+                            <h3>Calamari Fritti</h3>
+                            <span class="item-price">$16.00</span>
+                        </div>
+                        <p class="item-description">Crispy fried calamari served with marinara sauce and lemon aioli</p>
+                        <span class="item-tag">🌊 Seafood</span>
+                    </div>
+
+                    <div class="menu-item" data-category="appetizers">
+                        <div class="item-header">
+                            <h3>French Onion Soup</h3>
+                            <span class="item-price">$12.00</span>
+                        </div>
+                        <p class="item-description">Classic caramelized onion soup with Gruyère cheese and crusty bread</p>
+                        <span class="item-tag">🥣 Soup</span>
+                    </div>
+
+                    <div class="menu-item" data-category="appetizers">
+                        <div class="item-header">
+                            <h3>Shrimp Cocktail</h3>
+                            <span class="item-price">$18.00</span>
+                        </div>
+                        <p class="item-description">Jumbo shrimp served chilled with cocktail sauce and lemon</p>
+                        <span class="item-tag">🌊 Seafood</span>
+                    </div>
+
+                    <div class="menu-item" data-category="appetizers">
+                        <div class="item-header">
+                            <h3>Caprese Salad</h3>
+                            <span class="item-price">$13.00</span>
+                        </div>
+                        <p class="item-description">Fresh mozzarella, heirloom tomatoes, basil, and balsamic reduction</p>
+                        <span class="item-tag">🌱 Vegetarian</span>
+                    </div>
+
+                    <div class="menu-item" data-category="appetizers">
+                        <div class="item-header">
+                            <h3>Stuffed Mushrooms</h3>
+                            <span class="item-price">$15.00</span>
+                        </div>
+                        <p class="item-description">Portobello mushrooms filled with herbed cream cheese and breadcrumbs</p>
+                        <span class="item-tag">🌱 Vegetarian</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Courses -->
+            <div class="menu-category" id="mains">
+                <h2 class="category-title">🍖 Main Courses</h2>
+                <div class="items-grid">
+                    <div class="menu-item" data-category="mains">
+                        <div class="item-header">
+                            <h3>Prime Ribeye Steak</h3>
+                            <span class="item-price">$52.00</span>
+                        </div>
+                        <p class="item-description">12oz premium ribeye, aged to perfection, with truffle mashed potatoes and red wine reduction</p>
+                        <span class="item-tag">⭐ Chef's Special</span>
+                    </div>
+
+                    <div class="menu-item" data-category="mains">
+                        <div class="item-header">
+                            <h3>Grilled Lobster Tail</h3>
+                            <span class="item-price">$45.00</span>
+                        </div>
+                        <p class="item-description">Succulent lobster tail grilled to perfection, served with garlic butter and seasonal vegetables</p>
+                        <span class="item-tag">🌊 Seafood</span>
+                    </div>
+
+                    <div class="menu-item" data-category="mains">
+                        <div class="item-header">
+                            <h3>Pan-Seared Salmon</h3>
+                            <span class="item-price">$38.00</span>
+                        </div>
+                        <p class="item-description">Fresh Atlantic salmon with lemon dill sauce, asparagus, and wild rice</p>
+                        <span class="item-tag">🌊 Seafood</span>
+                    </div>
+
+                    <div class="menu-item" data-category="mains">
+                        <div class="item-header">
+                            <h3>Handmade Pasta Carbonara</h3>
+                            <span class="item-price">$28.00</span>
+                        </div>
+                        <p class="item-description">Fresh pasta with creamy carbonara sauce, crispy pancetta, and aged parmesan</p>
+                        <span class="item-tag">🍝 Pasta</span>
+                    </div>
+
+                    <div class="menu-item" data-category="mains">
+                        <div class="item-header">
+                            <h3>Herb-Crusted Lamb Chops</h3>
+                            <span class="item-price">$48.00</span>
+                        </div>
+                        <p class="item-description">Tender lamb chops with rosemary crust, mint jelly, and roasted vegetables</p>
+                        <span class="item-tag">⭐ Chef's Special</span>
+                    </div>
+
+                    <div class="menu-item" data-category="mains">
+                        <div class="item-header">
+                            <h3>Vegetarian Risotto</h3>
+                            <span class="item-price">$26.00</span>
+                        </div>
+                        <p class="item-description">Creamy arborio rice with wild mushrooms, truffle oil, and parmesan</p>
+                        <span class="item-tag">🌱 Vegetarian</span>
+                    </div>
+
+                    <div class="menu-item" data-category="mains">
+                        <div class="item-header">
+                            <h3>Chicken Piccata</h3>
+                            <span class="item-price">$32.00</span>
+                        </div>
+                        <p class="item-description">Tender chicken breast in lemon caper sauce with angel hair pasta</p>
+                        <span class="item-tag">🍗 Poultry</span>
+                    </div>
+
+                    <div class="menu-item" data-category="mains">
+                        <div class="item-header">
+                            <h3>Surf & Turf</h3>
+                            <span class="item-price">$65.00</span>
+                        </div>
+                        <p class="item-description">8oz filet mignon paired with grilled lobster tail, served with loaded baked potato</p>
+                        <span class="item-tag">⭐ Chef's Special</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts -->
+            <div class="menu-category" id="desserts">
+                <h2 class="category-title">🍰 Desserts</h2>
+                <div class="items-grid">
+                    <div class="menu-item" data-category="desserts">
+                        <div class="item-header">
+                            <h3>Chocolate Lava Cake</h3>
+                            <span class="item-price">$12.00</span>
+                        </div>
+                        <p class="item-description">Warm chocolate cake with molten center, served with vanilla ice cream</p>
+                        <span class="item-tag">⭐ Popular</span>
+                    </div>
+
+                    <div class="menu-item" data-category="desserts">
+                        <div class="item-header">
+                            <h3>Crème Brûlée</h3>
+                            <span class="item-price">$11.00</span>
+                        </div>
+                        <p class="item-description">Classic French custard with caramelized sugar crust</p>
+                        <span class="item-tag">🍮 Classic</span>
+                    </div>
+
+                    <div class="menu-item" data-category="desserts">
+                        <div class="item-header">
+                            <h3>New York Cheesecake</h3>
+                            <span class="item-price">$10.00</span>
+                        </div>
+                        <p class="item-description">Rich and creamy cheesecake with graham cracker crust and berry compote</p>
+                        <span class="item-tag">🍰 Classic</span>
+                    </div>
+
+                    <div class="menu-item" data-category="desserts">
+                        <div class="item-header">
+                            <h3>Tiramisu</h3>
+                            <span class="item-price">$11.00</span>
+                        </div>
+                        <p class="item-description">Traditional Italian dessert with espresso-soaked ladyfingers and mascarpone</p>
+                        <span class="item-tag">☕ Coffee Flavored</span>
+                    </div>
+
+                    <div class="menu-item" data-category="desserts">
+                        <div class="item-header">
+                            <h3>Fruit Tart</h3>
+                            <span class="item-price">$9.00</span>
+                        </div>
+                        <p class="item-description">Buttery tart shell filled with vanilla cream and topped with fresh seasonal fruit</p>
+                        <span class="item-tag">🍓 Fresh</span>
+                    </div>
+
+                    <div class="menu-item" data-category="desserts">
+                        <div class="item-header">
+                            <h3>Gelato Selection</h3>
+                            <span class="item-price">$8.00</span>
+                        </div>
+                        <p class="item-description">Three scoops of house-made gelato in assorted flavors</p>
+                        <span class="item-tag">🍨 Cold</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beverages -->
+            <div class="menu-category" id="beverages">
+                <h2 class="category-title">🍷 Beverages</h2>
+                <div class="items-grid">
+                    <div class="menu-item" data-category="beverages">
+                        <div class="item-header">
+                            <h3>House Wine</h3>
+                            <span class="item-price">$9.00</span>
+                        </div>
+                        <p class="item-description">Red or White - By the glass</p>
+                        <span class="item-tag">🍷 Wine</span>
+                    </div>
+
+                    <div class="menu-item" data-category="beverages">
+                        <div class="item-header">
+                            <h3>Premium Wine Selection</h3>
+                            <span class="item-price">$12-45</span>
+                        </div>
+                        <p class="item-description">Ask your server for our curated wine list</p>
+                        <span class="item-tag">🍷 Wine</span>
+                    </div>
+
+                    <div class="menu-item" data-category="beverages">
+                        <div class="item-header">
+                            <h3>Craft Cocktails</h3>
+                            <span class="item-price">$14.00</span>
+                        </div>
+                        <p class="item-description">Handcrafted cocktails made with premium spirits</p>
+                        <span class="item-tag">🍸 Cocktail</span>
+                    </div>
+
+                    <div class="menu-item" data-category="beverages">
+                        <div class="item-header">
+                            <h3>Espresso & Coffee</h3>
+                            <span class="item-price">$5.00</span>
+                        </div>
+                        <p class="item-description">Freshly brewed coffee or espresso-based drinks</p>
+                        <span class="item-tag">☕ Hot</span>
+                    </div>
+
+                    <div class="menu-item" data-category="beverages">
+                        <div class="item-header">
+                            <h3>Fresh Juice</h3>
+                            <span class="item-price">$6.00</span>
+                        </div>
+                        <p class="item-description">Orange, grapefruit, or seasonal fruit juice</p>
+                        <span class="item-tag">🍊 Fresh</span>
+                    </div>
+
+                    <div class="menu-item" data-category="beverages">
+                        <div class="item-header">
+                            <h3>Sparkling Water</h3>
+                            <span class="item-price">$4.00</span>
+                        </div>
+                        <p class="item-description">San Pellegrino or Perrier</p>
+                        <span class="item-tag">💧 Water</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Special Note Section -->
+    <section class="menu-note">
+        <div class="container">
+            <div class="note-box">
+                <h3>🌟 Special Dietary Requirements</h3>
+                <p>We accommodate various dietary needs including vegetarian, vegan, gluten-free, and allergy-friendly options. Please inform your server of any dietary restrictions, and our chef will be happy to customize dishes for you.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Taste These Delights?</h2>
+            <p>Reserve your table and experience our culinary excellence</p>
+            <a href="reservations.html" class="btn btn-light">Make a Reservation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Savory Bites</h3>
+                    <p>Fine dining experience with authentic flavors and a cozy atmosphere since 2010.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Hours</h4>
+                    <ul>
+                        <li>Monday - Friday: 11am - 10pm</li>
+                        <li>Saturday: 10am - 11pm</li>
+                        <li>Sunday: 10am - 9pm</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>📍 123 Culinary Avenue, Food District</li>
+                        <li>📞 (555) 123-4567</li>
+                        <li>✉️ info@savorybites.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Savory Bites. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
